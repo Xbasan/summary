@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block title %}
+projects
+{% endblock %}
+
+{% block content %}
+<div class="default">
+    <div class="text-center default-messange">
+        Данный момент здесь ничего нет,
+        но вы можете зделать заказ
+    </div>
+    <button class="btn btn_order">
+        Зделать заказ
+    </button>
+</div>
+
+<div id="app" class="app">
+    <button class="btn-close"></button>
+    {{ contact | safe }}
+</div>
+{% endblock %}
