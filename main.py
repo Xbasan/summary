@@ -22,7 +22,7 @@ contact = '''
         </ul>'''
 
 @app.route('/', methods=['GET'])
-def main():
+def main( ):
     return render_template('index.html', contact=contact)
 
 @app.route('/projects', methods=['GET'])
